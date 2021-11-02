@@ -29,12 +29,14 @@ def test(input_file):
 
     return T/N
 
+# CelebA-Spoof
+# train 0.8086
 # val 0.7081
 
 if __name__ == '__main__':
-    #acc1 = test(os.path.join(nuaa_root, train_csv))
-    #print(acc1)
+    acc1 = test(os.path.join(nuaa_root, train_csv))
+    print(acc1)
 
-    acc2 = test(os.path.join(nuaa_root, val_csv))
-    print(acc2)
+    #acc2 = test(os.path.join(nuaa_root, val_csv))
+    #print(acc2)
     #print(acc1, acc2)
